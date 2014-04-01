@@ -20,7 +20,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int i) {
         SimpleFragment simpleFragment = new SimpleFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("number", "" + i);
+        bundle.putString("number", "" + (i + 1));
         simpleFragment.setArguments(bundle);
         return simpleFragment;
     }
